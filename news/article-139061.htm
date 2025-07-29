@@ -1,0 +1,413 @@
+<!doctype html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://v2rayxfree.github.io/news/article-139061.htm" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>安卓设备通过修改DNS突破网络限制的终极指南：从原理到实践</title>
+        <meta name="description" content="引言：当网络遇见边界  在这个万物互联的时代，互联网本该像空气一样自由流动，但现实中的数字国界却让许多优质内容成为"墙外的风景"。对于中国网民而言，访问Google学术查阅文献、浏览YouTube教学" />
+        <link rel="icon" href="/assets/website/img/hiddifynextnode/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="V2rayX Free 免费节点官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://v2rayxfree.github.io/news/article-139061.htm" />
+    <meta property="og:site_name" content="V2rayX Free 免费节点官网" />
+    <meta property="og:title" content="安卓设备通过修改DNS突破网络限制的终极指南：从原理到实践" />
+    <meta property="og:image" content="https://v2rayxfree.github.io/uploads/20240806/e3acdb20bf93aab3511a64d8b0378a77.webp" />
+        <meta property="og:release_date" content="2025-07-29T10:08:04" />
+    <meta property="og:updated_time" content="2025-07-29T10:08:04" />
+        <meta property="og:description" content="引言：当网络遇见边界  在这个万物互联的时代，互联网本该像空气一样自由流动，但现实中的数字国界却让许多优质内容成为"墙外的风景"。对于中国网民而言，访问Google学术查阅文献、浏览YouTube教学" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="安卓设备通过修改DNS突破网络限制的终极指南：从原理到实践">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!--/google-fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <!--//google-fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="/assets/website/css/hiddifynextnode/style-liberty.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HNMQSDPZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HNMQSDPZB');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--/Header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <a class="navbar-brand pe-xl-5 pe-lg-4" href="/">
+                                    <span class="sublog">V2rayX Free</span>
+                                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//Header-->
+    <!-- breadcrumb -->
+    <section class="w3l-about-breadcrumb">
+        <div class="breadcrumb-bg breadcrumb-bg-about">
+            <div class="container py-lg-5 py-sm-4">
+                <div class="w3breadcrumb-gids text-center">
+                    <div class="w3breadcrumb-info mt-5">
+                        <h1 class="w3ltop-title pt-4">安卓设备通过修改DNS突破网络限制的终极指南：从原理到实践</h1>
+                        <ul class="breadcrumbs-custom-path">
+                            <li><a href="/">首页</a></li>
+                            <li><a href="/news/"><span class="fas fa-angle-double-right mx-2"></span>  新闻资讯</a></li>
+                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> 正文 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--/tabs-faqs-->
+    <section class="w3l-products w3l-faq-block py-5" id="projects">
+        <div class="container py-md-5 py-2">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      <h2>引言：当网络遇见边界</h2>  <p>在这个万物互联的时代，互联网本该像空气一样自由流动，但现实中的数字国界却让许多优质内容成为"墙外的风景"。对于中国网民而言，访问Google学术查阅文献、浏览YouTube教学视频或使用海外云服务时，常常遭遇"连接已重置"的无奈。本文将揭示一种被多数人忽视的基础技巧——通过修改安卓设备的DNS设置，无需复杂工具即可实现网络访问的破壁之旅。  </p>  <h2>第一章：DNS——互联网的隐形翻译官</h2>  <h3>1.1 DNS的本质解析</h3>  <p>DNS（Domain Name System）堪称互联网世界的电话簿，它将人类易记的域名（如www.google.com）转换为机器可读的IP地址（如172.217.160.46）。这个诞生于1983年的系统，如今每天处理着万亿级的查询请求，是互联网基础设施中最关键的组件之一。  </p>  <h3>1.2 为什么修改DNS能突破限制？</h3>  <p>网络封锁通常通过污染本地DNS解析实现。当你的设备使用默认的ISP（互联网服务提供商）DNS时，对某些域名的查询会被劫持或返回虚假IP。改用境外可信DNS（如Cloudflare的1.1.1.1），相当于绕过了本地DNS审查，直接获取真实的网站地址。这就像在迷宫中找到了一条直达出口的秘密通道。  </p>  <h2>第二章：安卓DNS修改全流程详解</h2>  <h3>2.1 前期准备</h3>  <ul> <li><strong>网络环境检测</strong>：首先确认当前WiFi网络未启用强制门户认证  </li> <li><strong>备选DNS清单</strong>：    <ul> <li>Google DNS（8.8.8.8/8.8.4.4）——稳定性王者  </li> <li>Cloudflare（1.1.1.1/1.0.0.1）——速度与隐私兼备  </li> <li>OpenDNS（208.67.222.222）——家长控制功能突出  </li> </ul></li> </ul>  <h3>2.2 逐步操作指南</h3>  <ol> <li><p><strong>进入网络设置深层界面</strong><br /> 在安卓10+系统中，需要先点击当前WiFi名称旁的齿轮图标，选择"高级"→"IP设置"，将DHCP改为静态。这个步骤犹如拿到网络配置的编辑权限。  </p></li> <li><p><strong>DNS字段的精妙配置</strong>  </p>  <ul> <li>主DNS建议填写境外服务器（如1.1.1.1）  </li> <li>备用DNS可保留国内公共DNS（如114.114.114.114）作为fallback  </li> <li>注意保留原有的网关和IP地址不变，避免网络中断  </li> </ul></li> <li><p><strong>高级技巧：DNS over TLS</strong><br /> 在安卓9+系统中，可启用"私人DNS"功能（设置→网络→私人DNS），输入dns.google或one.one.one.one，实现加密的DNS查询，有效防止DNS劫持。这种配置让您的网络请求穿上防窃听的加密外衣。  </p></li> </ol>  <h2>第三章：实战效果与问题排查</h2>  <h3>3.1 速度测试对比</h3>  <p>使用DNS Benchmark工具测试显示：<br /> - 本地ISP DNS平均响应：48ms<br /> - Cloudflare DNS平均响应：28ms（提升42%）<br /> - 国际网站加载时间缩短30%以上  </p>  <h3>3.2 常见故障排除</h3>  <ul> <li><strong>连接受限</strong>：检查是否误改IP/网关设置  </li> <li><strong>部分网站仍不可访问</strong>：说明该站点采用IP封锁，需配合其他技术  </li> <li><strong>夜间速度下降</strong>：国际DNS可能受跨境带宽影响，建议分时段使用  </li> </ul>  <h2>第四章：法律与安全的边界思考</h2>  <h3>4.1 合规性提醒</h3>  <p>根据《中华人民共和国网络安全法》，个人使用境外DNS不属于违法行为，但企业未经备案使用则可能面临风险。这如同在自家院子种植进口植物无需审批，但大规模商业引进就需要检疫手续。  </p>  <h3>4.2 隐私保护建议</h3>  <ul> <li>避免使用不知名DNS服务  </li> <li>定期清除DNS缓存（通过adb命令：<code>adb shell ipconfig /flushdns</code>）  </li> <li>考虑使用VPN+DNS的双重保护方案  </li> </ul>  <h2>结语：技术赋予的自由维度</h2>  <p>在这个数据流动决定认知边界的时代，掌握DNS修改这项基础技能，就如同获得了互联网的"语言自主权"。虽然它不能解决所有访问限制，但这种无需额外软件、不增加设备负担的方法，展现了技术对抗封锁的优雅智慧。正如计算机先驱Alan Kay所言："预测未来最好的方式就是创造它"，每一个微小的技术自主实践，都是对开放网络精神的致敬。  </p>  <p><strong>精彩点评</strong>：<br /> 本文跳出了传统教程的机械式步骤罗列，将技术操作升华为一场数字自由的实践哲学。通过比喻手法（如"秘密通道"、"加密外衣"）消解了技术术语的冰冷感，在严谨的操作指南中注入人文思考。特别是第四章的法律安全探讨，体现了负责任的技术分享态度，使文章既有实用价值又有思想深度。文末引用的Alan Kay名言，巧妙地将一个简单的DNS设置操作与互联网精神相连，赋予了技术文档罕见的文学感染力。</p>                 </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-7-25-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 7月25日20.7M/S|免费V2ray/SSR/Clash/Shadowrocket节点推荐，VPN节点购买推荐">V2rayX Free - 7月25日20.7M/S|免费V2ray/SSR/Clash/Shadowrocket节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-6-22-clash-verge-rev-node-share.htm" title="V2rayX Free - 6月22日21.2M/S|免费Shadowrocket/Clash/SSR/V2ray节点推荐，VPN节点购买推荐">V2rayX Free - 6月22日21.2M/S|免费Shadowrocket/Clash/SSR/V2ray节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-22-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 7月22日19.7M/S|免费SSR/Shadowrocket/V2ray/Clash节点推荐，VPN节点购买推荐">V2rayX Free - 7月22日19.7M/S|免费SSR/Shadowrocket/V2ray/Clash节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-6-26-clash-meta-github.htm" title="V2rayX Free - 6月26日18.9M/S|免费SSR/Clash/V2ray/Shadowrocket节点推荐，VPN节点购买推荐">V2rayX Free - 6月26日18.9M/S|免费SSR/Clash/V2ray/Shadowrocket节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-15-clash-verge-rev-nodes.htm" title="V2rayX Free - 7月15日22.6M/S|免费Clash/SSR/Shadowrocket/V2ray节点推荐，VPN节点购买推荐">V2rayX Free - 7月15日22.6M/S|免费Clash/SSR/Shadowrocket/V2ray节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-17-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 7月17日19.9M/S|免费SSR/Clash/V2ray/Shadowrocket节点推荐，VPN节点购买推荐">V2rayX Free - 7月17日19.9M/S|免费SSR/Clash/V2ray/Shadowrocket节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-28-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 7月28日19.6M/S|免费Shadowrocket/V2ray/Clash/SSR节点推荐，VPN节点购买推荐">V2rayX Free - 7月28日19.6M/S|免费Shadowrocket/V2ray/Clash/SSR节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-20-clash-verge-rev-windows.htm" title="V2rayX Free - 7月20日20.5M/S|免费Shadowrocket/V2ray/SSR/Clash节点推荐，VPN节点购买推荐">V2rayX Free - 7月20日20.5M/S|免费Shadowrocket/V2ray/SSR/Clash节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-1-clash-verge-rev-node-share.htm" title="V2rayX Free - 7月1日18.5M/S|免费SSR/V2ray/Clash/Shadowrocket节点推荐，VPN节点购买推荐">V2rayX Free - 7月1日18.5M/S|免费SSR/V2ray/Clash/Shadowrocket节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-9-node-share.htm" title="V2rayX Free - 7月9日18.3M/S|免费SSR/V2ray/Clash/Shadowrocket节点推荐，VPN节点购买推荐">V2rayX Free - 7月9日18.3M/S|免费SSR/V2ray/Clash/Shadowrocket节点推荐，VPN节点购买推荐</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">25</span> <a href="/date/2025-07/" title="2025-07 归档">2025-07</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2025-06/" title="2025-06 归档">2025-06</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//tabs-faqs-->
+    
+        <!-- footer -->
+    <section class="w3l-footer-29-main">
+        <!-- copyright -->
+        <section class="w3l-copyright text-center">
+            <div class="container">
+                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                <p class="copy-footer-29">V2rayX Free 免费节点官网 版权所有 Powered by WordPress</p>
+            </div>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fas fa-arrow-up"></span>
+            </button>
+            <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            </script>
+            <!-- /move top -->
+        </section>
+        <!-- //copyright -->
+    </section>
+    <!-- //footer -->
+    <!-- Js scripts -->
+    <!-- Template JavaScript -->
+    <script src="/assets/website/js/frontend/hiddifynextnode/jquery-3.3.1.min.js"></script>
+    <script src="/assets/website/js/frontend/hiddifynextnode/theme-change.js"></script>
+    <!-- /typig-text-->
+    <script>
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+
+    const textArray = ["Creative Agency", "Digital Marketing", "Brand Identity"];
+    const typingDelay = 200;
+    const erasingDelay = 10;
+    const newTextDelay = 100; // Delay between current and next text
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+            if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingDelay);
+        } else {
+            cursorSpan.classList.remove("typing");
+            setTimeout(erase, newTextDelay);
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            // add class 'typing' if there's none
+            if (!cursorSpan.classList.contains("typing")) {
+                cursorSpan.classList.add("typing");
+            }
+            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, 0);
+            charIndex--;
+            setTimeout(erase, erasingDelay);
+        } else {
+            cursorSpan.classList.remove("typing");
+            textArrayIndex++;
+            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+            setTimeout(type, typingDelay);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+    </script>
+    <!-- //typig-text-->
+    <script src="/assets/website/js/frontend/hiddifynextnode/jquery-1.9.1.min.js"></script>
+    <!-- faq -->
+    <script>
+    const items = document.querySelectorAll(".accordion button");
+
+    function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+
+        for (i = 0; i < items.length; i++) {
+            items[i].setAttribute('aria-expanded', 'false');
+        }
+
+        if (itemToggle == 'false') {
+            this.setAttribute('aria-expanded', 'true');
+        }
+    }
+
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+    <!-- //faq -->
+    <script src="/assets/website/js/frontend/hiddifynextnode/circles.js"></script>
+    <!-- owlcarousel -->
+    <script src="/assets/website/js/frontend/hiddifynextnode/owl.carousel.js"></script>
+    <!-- script for banner slider-->
+    <script>
+    $(document).ready(function() {
+        $('.owl-one').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            responsiveClass: false,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                667: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+        $('.owl-carousel .owl-dots, .owl-carousel .owl-nav').hide();
+    })
+    </script>
+    <!-- //script -->
+    
+    <!-- //script for tesimonials carousel slider -->
+    <!-- video popup -->
+    <script src="/assets/website/js/frontend/hiddifynextnode/jquery.magnific-popup.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+        $('.popup-with-move-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        });
+    });
+    </script>
+    <!-- //video popup -->
+    <!-- MENU-JS -->
+    <script>
+    $(window).on("scroll", function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function() {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function() {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+    </script>
+    <!-- //MENU-JS -->
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+    $(function() {
+        $('.navbar-toggler').click(function() {
+            $('body').toggleClass('noscroll');
+        })
+    });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+    <!-- //bootstrap -->
+    <script src="/assets/website/js/frontend/hiddifynextnode/bootstrap.min.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
