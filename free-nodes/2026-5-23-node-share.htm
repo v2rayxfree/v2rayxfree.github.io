@@ -249,6 +249,7 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-5-22-free-ssr-node.htm">V2rayX Free - 5月22日21.8M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点节点推荐，VPN节点购买推荐</a></p>
+        <p>下一个：<a href="/free-nodes/2026-5-24-clash-node.htm">V2rayX Free - 5月24日18.7M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点节点推荐，VPN节点购买推荐</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
@@ -257,24 +258,9 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
         Netch 支持 UDP 转发，可专门为游戏流量建立高速通道。结合策略组和节点延迟检测，可有效减少丢包和延迟，提高游戏体验的流畅性和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的 Proxy Group 能实现哪些策略？</h5></div>
-    <div class="panel-body">
-        Proxy Group 可以定义多种策略，如按延迟选择、随机、轮询或手动选择节点。结合分流规则，可实现针对不同网站或应用的智能代理，提高网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
     <div class="panel-body">
         管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 节点延迟检测对视频流量有何作用？</h5></div>
-    <div class="panel-body">
-        WinXray 会定期测速节点延迟和丢包率，并结合策略组自动选择最佳节点。保证视频流量通过低延迟节点，减少缓冲和卡顿，提高播放流畅度和体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 在 iOS 上无法连接时如何调试？</h5></div>
-    <div class="panel-body">
-        检查 iOS 的 VPN 配置权限是否授予，确认订阅链接或手动配置填写无误；查看 Surfboard 的日志或诊断页面，查看是否为 DNS 问题、TLS 错误或节点超时，并尝试切换节点或重启应用。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mihomo 节点分组如何自动切换最佳节点？</h5></div>
@@ -282,14 +268,19 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
         将节点按延迟、地区或用途分组，并启用策略组功能，系统会根据节点延迟和健康状态自动切换到最佳节点，保证网页、视频和游戏连接稳定流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 策略组如何优化视频访问？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 在 iOS 上无法连接时如何调试？</h5></div>
     <div class="panel-body">
-        通过策略组将视频流量分配到低延迟、高带宽节点，Surfboard 可自动切换到最佳节点。减少缓冲和卡顿，提高在线视频播放流畅性和整体网络体验。<hr />    </div>
+        检查 iOS 的 VPN 配置权限是否授予，确认订阅链接或手动配置填写无误；查看 Surfboard 的日志或诊断页面，查看是否为 DNS 问题、TLS 错误或节点超时，并尝试切换节点或重启应用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 节点分组如何保证低延迟？</h5></div>
+    <div class="panel-heading"><h5>如何在手机上减少代理应用对电量的消耗？</h5></div>
     <div class="panel-body">
-        将节点按延迟、地区或用途分组，并启用策略组，系统会根据节点延迟和健康状态自动选择最佳节点。保证网页浏览、视频播放和游戏流量的低延迟和稳定连接。<hr />    </div>
+        关闭不必要的后台代理连接，减少实时测速或心跳频率，启用省电模式并限制流量统计与日志记录；对于常用站点设置直连策略，避免所有流量都走代理带来的持续网络负荷。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 的 Proxy Group 能实现哪些策略？</h5></div>
+    <div class="panel-body">
+        Proxy Group 可以定义多种策略，如按延迟选择、随机、轮询或手动选择节点。结合分流规则，可实现针对不同网站或应用的智能代理，提高网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 是否可以管理多客户端节点？</h5></div>
@@ -297,9 +288,19 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
         可以。Nekobox 与 Shadowsocks、Clash 等客户端独立运行，互不干扰。结合策略组使用，可灵活分配节点，实现多客户端管理和流量优化。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在手机上减少代理应用对电量的消耗？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 策略组如何优化视频访问？</h5></div>
     <div class="panel-body">
-        关闭不必要的后台代理连接，减少实时测速或心跳频率，启用省电模式并限制流量统计与日志记录；对于常用站点设置直连策略，避免所有流量都走代理带来的持续网络负荷。    </div>
+        通过策略组将视频流量分配到低延迟、高带宽节点，Surfboard 可自动切换到最佳节点。减少缓冲和卡顿，提高在线视频播放流畅性和整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 节点延迟检测对视频流量有何作用？</h5></div>
+    <div class="panel-body">
+        WinXray 会定期测速节点延迟和丢包率，并结合策略组自动选择最佳节点。保证视频流量通过低延迟节点，减少缓冲和卡顿，提高播放流畅度和体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 节点分组如何保证低延迟？</h5></div>
+    <div class="panel-body">
+        将节点按延迟、地区或用途分组，并启用策略组，系统会根据节点延迟和健康状态自动选择最佳节点。保证网页浏览、视频播放和游戏流量的低延迟和稳定连接。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -322,22 +323,43 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
 </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default box right-ad-box">
+    <div class="panel-heading">
+        <h3 class="panel-title">特别推荐</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="text-center">
+                <a href="javascript:;" class="js_to" data-url="https://www.futizi.net/?code=" data-type="Luniuyun" data-code="svvkQf3y" target="_blank">
+                    <img src="/assets/website/img/G/luniuyun.webp" class="avatar" alt="绿牛云">
+                </a>
+                <dl>
+                    <dt><a href="javascript:;" class="js_to" data-url="https://www.futizi.net/?code=" data-type="Luniuyun" data-code="svvkQf3y" target="_blank">绿牛云</a></dt>
+                    <dd>
+                        <p>高速稳定的网络加速</p>
+                        <p>畅享全球内容，访问 ChatGPT、TikTok、Google 等热门网站。
+全平台支持 · 7×24 专业客服 · 采用军工级安全加密传输技术。</p>                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">热门文章</h3>
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-4-free-node-subscribe-links.htm" title="V2rayX Free - 5月4日22.8M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月4日22.8M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-2-free-node-subscribe.htm" title="V2rayX Free - 5月2日19.8M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月2日19.8M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-11-free-ssr-subscribe.htm" title="V2rayX Free - 5月11日22.7M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月11日22.7M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-26-free-clash.htm" title="V2rayX Free - 4月26日19.1M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 4月26日19.1M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-28-free-subscribe-node.htm" title="V2rayX Free - 4月28日20.5M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 4月28日20.5M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-1-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 5月1日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月1日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-15-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 5月15日21.3M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月15日21.3M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-10-free-ssr-subscribe.htm" title="V2rayX Free - 5月10日21.9M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月10日21.9M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-17-free-subscribe-node.htm" title="V2rayX Free - 4月17日22.4M/S|免费Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点节点推荐，VPN节点购买推荐">V2rayX Free - 4月17日22.4M/S|免费Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-23-free-clash-subscribe.htm" title="V2rayX Free - 4月23日20M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，VPN节点购买推荐">V2rayX Free - 4月23日20M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-21-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 5月21日22.9M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月21日22.9M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-2-free-node-subscribe.htm" title="V2rayX Free - 5月2日19.8M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月2日19.8M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-17-free-ssr-subscribe.htm" title="V2rayX Free - 5月17日21.2M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月17日21.2M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-10-free-ssr-subscribe.htm" title="V2rayX Free - 5月10日21.9M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月10日21.9M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-12-clash-node-daily-updates.htm" title="V2rayX Free - 4月12日21.6M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，VPN节点购买推荐">V2rayX Free - 4月12日21.6M/S|免费V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-1-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 5月1日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月1日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-28-free-clash-subscribe.htm" title="V2rayX Free - 5月28日20M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，VPN节点购买推荐">V2rayX Free - 5月28日20M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-16-clash-node-daily-updates.htm" title="V2rayX Free - 4月16日18.3M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐">V2rayX Free - 4月16日18.3M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-30-shadowrocket-node.htm" title="V2rayX Free - 4月30日21.9M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐">V2rayX Free - 4月30日21.9M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-27-free-ssr-subscribe.htm" title="V2rayX Free - 4月27日22.1M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点节点推荐，VPN节点购买推荐">V2rayX Free - 4月27日22.1M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点节点推荐，VPN节点购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -349,7 +371,7 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
@@ -381,6 +403,9 @@ systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
+                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://www.futizi.net/?code=" data-type="Luniuyun" data-code="svvkQf3y" target="_blank">绿牛云</a></b> <p>高速稳定的网络加速</p>
+                        <p>畅享全球内容，访问 ChatGPT、TikTok、Google 等热门网站。
+全平台支持 · 7×24 专业客服 · 采用军工级安全加密传输技术。</p></div>
                                     <p class="copy-footer-29">V2rayX Free 免费节点官网 版权所有 Powered by WordPress</p>
             </div>
             <!-- move top -->
