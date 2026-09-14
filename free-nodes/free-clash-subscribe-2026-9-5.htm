@@ -263,9 +263,14 @@ sudo systemctl start v2ray
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 如何在 iPhone 上使用？</h5></div>
+    <div class="panel-heading"><h5>VMess 协议的核心优势是什么？</h5></div>
     <div class="panel-body">
-        从 App Store 下载 Surfboard 后，导入 Clash 订阅链接即可使用。Surfboard 提供直观的节点切换和规则管理界面，可查看实时延迟与流量数据，非常适合希望简单上手的 iOS 用户。<hr />    </div>
+        VMess 是 V2Ray 项目的核心协议，支持加密、认证和多路复用功能。它能有效防止中间人攻击和流量识别，具有较高的安全性和灵活性，是目前科学上网中最常见的加密协议之一。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何给 Clash 或 Sing-box 添加本地广告屏蔽规则？</h5></div>
+    <div class="panel-body">
+        可导入公共广告域名列表（如 ads、trackers）并将其指向 `REJECT` 或 `DIRECT`（根据需求）；还可以使用 rule-provider 自动更新广告规则，并结合 hosts 或 DNS 层面进行联合拦截以提升屏蔽效果。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 支持 Hysteria 协议吗？</h5></div>
@@ -273,19 +278,24 @@ sudo systemctl start v2ray
         新版本的 WinXray 已整合了 V2Ray 内核更新，支持 Hysteria 协议。用户可通过导入 Clash 或 sing-box 类型的订阅使用基于 QUIC 的高性能连接，速度和稳定性均更出色。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 的“节点切换策略”如何配置？</h5></div>
-    <div class="panel-body">
-        在 PassWall2 中可设置多节点策略，如“按延迟排序”、“自动选择最快节点”等。程序会定期测速，根据实时数据自动切换线路，保证连接的稳定性和速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Mihomo 节点分组如何保证低延迟？</h5></div>
     <div class="panel-body">
         将节点按延迟、地区或用途分组，并启用策略组，系统会根据节点延迟和健康状态自动选择最佳节点。保证网页浏览、视频播放和游戏流量的低延迟和稳定连接。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 协议的核心优势是什么？</h5></div>
+    <div class="panel-heading"><h5>WinXray 的 PAC 模式有什么优势？</h5></div>
     <div class="panel-body">
-        VMess 是 V2Ray 项目的核心协议，支持加密、认证和多路复用功能。它能有效防止中间人攻击和流量识别，具有较高的安全性和灵活性，是目前科学上网中最常见的加密协议之一。<hr />    </div>
+        PAC 模式可根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问环境，提高网络访问速度和稳定性，同时减少误操作导致的访问失败。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 客户端延迟测试值不稳定怎么办？</h5></div>
+    <div class="panel-body">
+        可通过调整 Hysteria2 的 `recv_window` 与 `send_window` 参数改善传输性能，同时确保服务器带宽充足。若使用移动网络，建议启用 BBR 拥塞控制并降低测速频率以减少波动。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 的“节点切换策略”如何配置？</h5></div>
+    <div class="panel-body">
+        在 PassWall2 中可设置多节点策略，如“按延迟排序”、“自动选择最快节点”等。程序会定期测速，根据实时数据自动切换线路，保证连接的稳定性和速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>如何使用 Docker 部署 sing-box 或 v2ray？</h5></div>
@@ -298,19 +308,9 @@ sudo systemctl start v2ray
         支持。用户可扫描节点二维码导入节点信息，也可手动输入节点参数。虽然不支持订阅自动更新，但对于轻量用户来说足够满足日常节点管理和流量分流需求。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 客户端延迟测试值不稳定怎么办？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 如何在 iPhone 上使用？</h5></div>
     <div class="panel-body">
-        可通过调整 Hysteria2 的 `recv_window` 与 `send_window` 参数改善传输性能，同时确保服务器带宽充足。若使用移动网络，建议启用 BBR 拥塞控制并降低测速频率以减少波动。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何给 Clash 或 Sing-box 添加本地广告屏蔽规则？</h5></div>
-    <div class="panel-body">
-        可导入公共广告域名列表（如 ads、trackers）并将其指向 `REJECT` 或 `DIRECT`（根据需求）；还可以使用 rule-provider 自动更新广告规则，并结合 hosts 或 DNS 层面进行联合拦截以提升屏蔽效果。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的 PAC 模式有什么优势？</h5></div>
-    <div class="panel-body">
-        PAC 模式可根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问环境，提高网络访问速度和稳定性，同时减少误操作导致的访问失败。    </div>
+        从 App Store 下载 Surfboard 后，导入 Clash 订阅链接即可使用。Surfboard 提供直观的节点切换和规则管理界面，可查看实时延迟与流量数据，非常适合希望简单上手的 iOS 用户。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -358,16 +358,16 @@ sudo systemctl start v2ray
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-8-21.htm" title="V2rayX Free - 8月21日22.5M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月21日22.5M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-8-node-share.htm" title="V2rayX Free - 8月8日20.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月8日20.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-22-free-node-subscribe.htm" title="V2rayX Free - 8月22日20.9M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月22日20.9M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-8-9.htm" title="V2rayX Free - 8月9日20.6M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月9日20.6M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-9-3.htm" title="V2rayX Free - 9月3日19.4M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点节点推荐，VPN节点购买推荐">V2rayX Free - 9月3日19.4M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-25.htm" title="V2rayX Free - 8月25日21M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月25日21M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-13.htm" title="V2rayX Free - 9月13日19.2M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，VPN节点购买推荐">V2rayX Free - 9月13日19.2M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-20-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 8月20日21.1M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月20日21.1M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-8-13.htm" title="V2rayX Free - 8月13日22.4M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月13日22.4M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-23.htm" title="V2rayX Free - 8月23日20.1M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月23日20.1M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-12-free-clash.htm" title="V2rayX Free - 8月12日20.4M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月12日20.4M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，VPN节点购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-10-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 8月10日18.9M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月10日18.9M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-8-19.htm" title="V2rayX Free - 8月19日18.2M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月19日18.2M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-14-node-share.htm" title="V2rayX Free - 8月14日21.2M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月14日21.2M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-14-free-node-subscribe.htm" title="V2rayX Free - 9月14日19.2M/S|免费Clash节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐">V2rayX Free - 9月14日19.2M/S|免费Clash节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-9-7.htm" title="V2rayX Free - 9月7日18.5M/S|免费V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，VPN节点购买推荐">V2rayX Free - 9月7日18.5M/S|免费V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-16-clash-node.htm" title="V2rayX Free - 8月16日19.6M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月16日19.6M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-30-clash-v2ray-ss-ssr.htm" title="V2rayX Free - 8月30日22.1M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月30日22.1M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点节点推荐，VPN节点购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-6-free-clash.htm" title="V2rayX Free - 8月6日18.3M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐">V2rayX Free - 8月6日18.3M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点/V2ray节点节点推荐，VPN节点购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -379,7 +379,7 @@ sudo systemctl start v2ray
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
